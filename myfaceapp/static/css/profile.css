@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.user {
+  width: 100vw;
+  max-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #000;
+}
+
+.user .user-image {
+  margin-left: 3rem;
+  width: 50vw;
+}
+
+.user .user-image img {
+  width: 6vw;
+  height: 11vh;
+  border-radius: 50%;
+  border: 1px solid grey;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.user .user-followers-following {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.user .user-followers-following .user-posts .posts-number {
+  font-size: 2rem;
+}
+
+.posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  padding-left: 2.5rem;
+  padding-top: 1rem;
+}
+
+.posts .user-post .post-image img {
+  width: 20vw;
+  border-bottom: 1px solid red;
+}
+
+.posts .user-post .posts-comments-like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15vw;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.posts .user-post .posts-comments-like #like {
+  color: pink;
+}
+
+.posts .user-post .posts-comments-like a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=profile.css.map */

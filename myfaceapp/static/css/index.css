@@ -1,0 +1,38 @@
+#post-img {
+  width: 20vw;
+  min-height: 15vh;
+  max-height: 30vh;
+  border-bottom: 1px solid black;
+}
+.container .post {
+  border: 1px solid grey;
+}
+.container .post .user-post {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  height: 8vh;
+}
+.container .post .user-post img {
+  border-radius: 50%;
+  width: 4vw;
+  object-fit: contain;
+  height: 7vh;
+  margin: 2px 5px;
+  border: 0.9px solid grey;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
+.container .post .ev {
+  display: flex;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+}

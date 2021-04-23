@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+button {
+  cursor: pointer;
+}
+
+.sub {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+}
+
+.sub .face {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.sub .face #myfacebook {
+  width: 25rem;
+}
+
+.sub .face .para-1 {
+  font-size: 2.5rem;
+  font-family: "Roboto";
+}
+
+.sub .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 25vw;
+  padding-top: 1.5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #ffff;
+  margin-left: 1rem;
+  box-shadow: -3px 1px 24px 5px rgba(186, 169, 169, 0.75);
+  -webkit-box-shadow: -3px 1px 24px 5px rgba(186, 169, 169, 0.75);
+  -moz-box-shadow: -3px 1px 24px 5px rgba(186, 169, 169, 0.75);
+  min-height: 40vh;
+  border-radius: 2rem;
+}
+
+.sub .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sub .form form input {
+  width: 20rem;
+  margin-bottom: 2rem;
+  height: 6vh;
+  border: 1px solid #4b4d4d;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.sub .form form input::-webkit-input-placeholder {
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  color: #4b4d4d;
+  text-transform: capitalize;
+}
+
+.sub .form form input:-ms-input-placeholder {
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  color: #4b4d4d;
+  text-transform: capitalize;
+}
+
+.sub .form form input::-ms-input-placeholder {
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  color: #4b4d4d;
+  text-transform: capitalize;
+}
+
+.sub .form form input::placeholder {
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  color: #4b4d4d;
+  text-transform: capitalize;
+}
+
+.sub .form form input:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+.sub .form form button {
+  padding: 20px 25px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #166fe5;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 900;
+  color: #ffff;
+  letter-spacing: 2px;
+}
+
+.sub .form a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 1rem;
+  text-align: center;
+  margin: 25px 0px;
+}
+
+.sub .form button {
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #36a420;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 900;
+  color: #ffff;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+}
+
+.sub .login {
+  display: none;
+  position: absolute;
+  left: 43rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 25vw;
+  padding-top: 1.5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #ffff;
+  margin-left: 1rem;
+  box-shadow: -3px 1px 24px 5px rgba(186, 169, 169, 0.75);
+  -webkit-box-shadow: -3px 1px 24px 5px rgba(186, 169, 169, 0.75);
+  -moz-box-shadow: -3px 1px 24px 5px rgba(186, 169, 169, 0.75);
+  min-height: 40vh;
+  border-radius: 2rem;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.sub .login #crosses {
+  position: absolute;
+  right: -5rem;
+  color: #000;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.sub .login #crosses .cross-1 {
+  -webkit-transform: rotate(32deg);
+  transform: rotate(32deg);
+}
+
+.sub .login #crosses .cross-2 {
+  -webkit-transform: rotate(-34deg);
+  transform: rotate(-34deg);
+}
+
+.sub .login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sub .login form button {
+  padding: 20px 25px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #166fe5;
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: 900;
+  color: #ffff;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.sub .login form input {
+  width: 20rem;
+  margin-bottom: 2rem;
+  height: 6vh;
+  border: 1px solid #4b4d4d;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.sub .login form input::-webkit-input-placeholder {
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  color: #4b4d4d;
+  text-transform: capitalize;
+}
+
+.sub .login form input:-ms-input-placeholder {
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  color: #4b4d4d;
+  text-transform: capitalize;
+}
+
+.sub .login form input::-ms-input-placeholder {
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  color: #4b4d4d;
+  text-transform: capitalize;
+}
+
+.sub .login form input::placeholder {
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: "Roboto";
+  color: #4b4d4d;
+  text-transform: capitalize;
+}
+
+.sub .login form input:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+@media (max-width: 500px) {
+  .sub {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+/*# sourceMappingURL=signup.css.map */

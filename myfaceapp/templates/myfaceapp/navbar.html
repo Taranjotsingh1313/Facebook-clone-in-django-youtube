@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'index' %}">MyFacebook</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="{% url 'index' %}"
+            ><i class="fad fa-home-lg-alt"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            id="plus"
+            href="{% url 'upload-post' %}"
+          >
+            <i class="far fa-plus-square"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            style
+            aria-current="page"
+            href="{% url 'profile' %}"
+            ><i class="fas fa-user"></i
+          ></a>
+        </li>
+      </ul>
+      {% if user.is_authenticated %}
+      <form action="{% url 'search' %}" method="GET" class="mx-2 d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search Users Here"
+          aria-label="Search"
+          name="search1"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+      {% endif %}
+      <h4 class="text-center mx-3">{{user.get_full_name}}</h4>
+    </div>
+  </div>
+</nav>

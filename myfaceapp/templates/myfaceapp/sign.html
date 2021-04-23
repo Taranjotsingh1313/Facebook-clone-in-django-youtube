@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyFacebook</title>
+    <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  </head>
+  {% if messages %}
+    {% for message in messages %}
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Warning</strong> {{message}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+    {% endfor %}
+    {% endif %}
+    <div class="sub">
+      <div class="face">
+        <img src="{% static 'images/myfacebook.png' %}" id="myfacebook" alt="" srcset="" />
+        <p class="para-1">
+          Myfacebook helps you connect and share with the people in your life.
+        </p>
+      </div>
+      <div class="form">
+        <form action="{% url 'login' %}" method="POST" class="singup">
+          {% csrf_token %}
+          <input type="text" name="username" class="email" placeholder="Username" />
+          <input type="password" name="password" class="password" placeholder="password here" />
+          <button class="submit">Log In</button>
+        </form>
+        <a href="" class="forget">Forgotten password?</a>
+        <button class="create-account" id="create-account">Create New Account</button>
+      </div>
+      <div class="login" id="login">
+        <div id="crosses">
+          &#10008;
+          </div>
+          <form action="" method="POST" class="login-form">
+                {% csrf_token %}
+              <input type="email" name="email" class="email" placeholder="Email" />
+              <input type="text" name="username" class="username" placeholder="Username" />
+              <input type="text" name="firstname" class="First Name" placeholder="First Name" />
+              <input type="text" name="lastname" class="Last Name" placeholder="Last Name" />
+              <input type="password" name="password" class="password" placeholder="password here" />
+              <button class="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
