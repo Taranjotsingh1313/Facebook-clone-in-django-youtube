@@ -40,11 +40,11 @@
           &#10008;
           </div>
           <form action="" method="POST" class="login-form">
-                {% csrf_token %}
+          {% csrf_token %}
               <input type="email" name="email" class="email" placeholder="Email" />
-              <input type="text" name="username" class="username" placeholder="Username" />
-              <input type="text" name="firstname" class="First Name" placeholder="First Name" />
-              <input type="text" name="lastname" class="Last Name" placeholder="Last Name" />
+              <input type="text"  name="username" class="username" placeholder="Username" />
+              <input type="text" name="fname"  class="First Name" placeholder="First Name" />
+              <input type="text" name="lname"  class="Last Name" placeholder="Last Name" />
               <input type="password" name="password" class="password" placeholder="password here" />
               <button class="submit">Sign Up</button>
             </form>
