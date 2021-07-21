@@ -13,3 +13,4 @@ class Post(models.Model):
     profileuser = models.ForeignKey(profilemodel,related_name="profile",on_delete=models.CASCADE)
     likes = models.ManyToManyField(User,related_name="likes",blank=True,null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+

@@ -32,37 +32,40 @@
     {% endif %}
     <div class="user">
       <div class="user-image">
-        <img src="{{pr.image.url}}" alt="" />
-        <h6>{{pr.user}}</h6>
+        <img src="{{profile.image.url}}" alt="" />
+        <h6></h6>
       </div>
       <div class="user-followers-following">
         <div class="user-posts">
-          <h3 class="posts-number">{{postnumber}}</h3>
+          <h3 class="posts-number">{{posts.count}}</h3>
           <h3 class="user-posts">Posts</h3>
         </div>
         <div class="user-followers">
-          <h3 class="followers-number">{{followers}}</h3>
+          <h3 class="followers-number">{{profile.followers.count}}</h3>
           <h3 class="user-followers">Followers</h3>
         </div>
         <div class="user-followings">
-          <h3 class="following-numbers">{{following}}</h3>
+          <h3 class="following-numbers">{{profile.following.count}}</h3>
           <h3 class="user-following">Following</h3>
         </div>
       </div>
     </div>
     <div class="posts">
-    {% for posts in post %}
-      <div class="user-post">
+      <!--  -->
+      {% for post in posts %}
+            <div class="user-post">
         <div class="post-image">
-          <img src="{{posts.post.url}}" alt="" />
+          <img src="{{post.post.url}}" alt="" />
         </div>
         <div class="posts-comments-like">
           <a href="" id="like">&#x02665;</a>
           <a href="">Comments</a>
         </div>
       </div>
-      
       {% endfor %}
+
+      <!--  -->
+      
       </div>
     </div>
   </body>

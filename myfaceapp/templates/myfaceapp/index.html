@@ -23,16 +23,23 @@
   <body>
     {% include 'myfaceapp/navbar.html' %}
     <div class="container">
-      {% for posts in post %}
+      {% comment %} {% endcomment %} {% for posts in post %}
       <div class="post mt-2">
         <div class="user-post">
           <img src="{{posts.profileuser.image.url}}" alt="" srcset="" />
           <h5 class="user-title">{{posts.profileuser.user}}</h5>
         </div>
-        <img src="{{posts.post.url}}" id="post-img" alt="" srcset="" />
+        <img
+          src="{{posts.post.url}}"
+          style="width: 50%; max-height: 20vh"
+          id="post-img"
+          alt=""
+          srcset=""
+        />
         <div class="ev">
           <form action="" id="like">
-          so ok in this video we will learn about building a django webiste facebook clone 
+            so ok in this video we will learn about building a django webiste
+            facebook clone
             <button class="btn-sm btn-danger">Like</button>
           </form>
           <span class="likes">200 &#x02665;</span>
@@ -42,7 +49,7 @@
           <span>20 Comments</span>
         </div>
       </div>
-      {% endfor %}
+      {% endfor %} {% comment %} {% endcomment %}
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
